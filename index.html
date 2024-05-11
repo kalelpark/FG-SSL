@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Robust Asymmetric Loss">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FG-SSL : Fine-Grained Self-Supervised Learning with Jigsaw puzzles for medical image classification</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/kalelpark/RAL">
+            RAL-Loss
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-1 publication-title">Fine-Grained Self-Supervised Learning with Jigsaw puzzles for medical image classification</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/kalelpark">Wongi Park</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/jongbinryu">Jongbin Ryu</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Ajou University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0010482524005444"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0010482524005444"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/kalelpark/FG-SSL"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Classifying fine-grained lesions is challenging due to minor and subtle differences in medical images. This is because learning features of fine-grained lesions with highly minor differences is very difficult in training deep neural networks. Therefore, in this paper, we introduce Fine-Grained Self-Supervised
+Learning(FG-SSL) method for classifying subtle lesions in medical images. The proposed method progressively learns the model through hierarchical
+block such that the cross-correlation between the fine-grained Jigsaw puzzle
+and regularized original images is close to the identity matrix. We also apply
+hierarchical block for progressive fine-grained learning, which extracts different information in each step, to supervised learning for discovering subtle
+differences. Our method does not require an asymmetric model, nor does a
+negative sampling strategy, and is not sensitive to batch size. We evaluate
+the proposed fine-grained self-supervised learning method on comprehensive
+experiments using various medical image recognition datasets. In our experiments, the proposed method performs favorably compared to existing
+state-of-the-art approaches on the widely-used ISIC2018, APTOS2019, and
+ISIC2017 datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">FG-SSL Framework</h2>
+      <img width="100%" src="./static/images/img.png">
+      <br><b>
+        <div style="display: flex; justify-content: center; text-align: center; margin-bottom: 5px;"> Overall illustration of our framework. </div></b>
+      </b><br>
+      <div class="content has-text-justified">
+        <p>
+          Overall workflow of the proposed FG-SSL method. We generate Jigsaw puzzles and distorted images from an original training sample to learn fine-grained self-supervision. By comparing the features obtained from fine-grained Jigsaw puzzles and distorted images,
+          we minimize the empirical cross-correlation with the identity matrix for progressively training our networks.
+          For further details, please refer to <a href="https://arxiv.org/pdf/2308.05770">our paper</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+  <br>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Factor Analysis.</h2>
+        <img width="90%" src="./static/images/img3.png"> <br><b>
+        <div style="display: flex; justify-content: center; text-align: center; margin-bottom: 5px;"></div></b>
+        <div class="content has-text-justified">
+          <p>
+            To show the effectiveness of the progressive Jigsaw puzzles, we compare ours with other self-supervised learning methods in Table 2a. 
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="title is-3">Visualization</h2>
+        <img width="90%" src="./static/images/img2.png"> <br><b>
+          <div style="display: flex; justify-content: center; text-align: center; margin-bottom: 5px;"></div></b>
+        <br>
+        <div class="content has-text-justified">
+          <p>
+            Grad-CAM [44] visualization. A*, B*, and C* represent the result of sequentially adding the Rotation [41], SimSiam [42], and BarlowTwins [23] methods with the proposed fine-grained self-supervised learning. At the same time, A, B, and C are taken from the baseline networks without our self-supervised learning.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  <br>
+  <br>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2024fine,
+      title={Fine-Grained Self-Supervised Learning with Jigsaw puzzles for medical image classification},
+      author={Park, Wongi and Ryu, Jongbin},
+      journal={Computers in Biology and Medicine},
+      volume={174},
+      pages={108460},
+      year={2024},
+      publisher={Elsevier}
+    }</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
